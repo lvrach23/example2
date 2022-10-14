@@ -39,7 +39,7 @@ double ans = Math.Sqrt(x + y +z);
 Console.Write($"растояние между точкой A и B равно {ans}");*/
 
 /*Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
-3 -> 1, 8, 27       5 -> 1, 8, 27, 64, 125*/
+3 -> 1, 8, 27       5 -> 1, 8, 27, 64, 125
 
 Console.Write($"Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
@@ -49,4 +49,15 @@ for (int i=0; i<number; i++)
     answer[i]=(int)Math.Pow((i+1), 3);
 }    
 string ans = string.Join(", ", answer);
-Console.Write($"{number} -> {ans}");
+Console.Write($"{number} -> {ans}");*/
+
+int[] creatArray()
+{
+    int[] array = new int[8];
+    for (int i=0; i<8; i++)
+        array[i]=new Random().Next(0,2);
+    return array;
+}
+
+
+
